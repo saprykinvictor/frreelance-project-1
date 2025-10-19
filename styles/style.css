@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Sen';
+  src: url('../fonts/../fonts/SenRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sen';
+  src: url('../fonts/../fonts/SenBold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+:root {
+  /* colors */
+
+  --black: #000;
+  --level-1: #181823;
+  --white: #fff;
+  --purple: #5221e6;
+  --light-grey: #8491a0;
+  --dark-grey: #5b6876;
+  --green-accent: #3cc74e;
+  --blue-accent: #609bff;
+  --pink-accent: #e95d90;
+  --peach-accent: #fff3e4;
+  --violet-accent: #fbe4ff;
+
+  /* fonts */
+
+  --font-family: 'Sen', sans-serif;
+}
+
+
+
+/* html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+} */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline-style: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body {
+  font-family: var(--font-family, sans-serif);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 55px;
+  color: var(--white);
+}
+
+.icon,
+.icon-3 {
+  width: 32px;
+  height: 32px;
+  color: var(--purple);
+}
+
+.icon-3 {
+  stroke: currentColor;
+  fill: none;
+}
+
+.skills {
+  padding-block: 120px;
+  background-color: var(--black);
+  color: var(--light-grey);
+}
+
+.skills__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 72px;
+}
+.skills__title {
+  margin-bottom: 24px;
+}
+
+.skills__descr {
+  max-width: 368px;
+}
+
+.skills__inner-cards {
+  margin: 0;
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 72px;
+}
+
+.skills-card__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white);
+}
