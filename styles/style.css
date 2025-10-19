@@ -289,13 +289,6 @@ body {
 }
 
 .clients__item {
-  padding-block: 3.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 340px;
-  height: 140px;
-  border: 1px solid var(--level-1);
 }
 
 .clients__item:not(:last-child) {
@@ -303,13 +296,20 @@ body {
 }
 
 .clients__link {
+  padding-block: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  height: 140px;
+  border: 1px solid var(--level-1);
   color: var(--light-grey);
 }
 
 .client-icon {
   width: 85px;
   height: 30px;
-  fill: var(--light-grey);
+  fill: currentColor;
 }
 
 .client-icon--5 {
