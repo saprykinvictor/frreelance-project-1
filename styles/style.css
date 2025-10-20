@@ -304,12 +304,19 @@ body {
   height: 140px;
   border: 1px solid var(--level-1);
   color: var(--light-grey);
+  transition: color .3s ease-in-out;
+}
+
+.clients__link:hover {
+  color: var(--purple);
 }
 
 .client-icon {
+  position: relative;
   width: 85px;
   height: 30px;
   fill: currentColor;
+  z-index: 9;
 }
 
 .client-icon--5 {
