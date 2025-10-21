@@ -817,6 +817,7 @@ body {
   margin-top: 8px;
   padding: 16px;
   border: none;
+  color: var(--white);
   background-color: var(--level-1);
 }
 
