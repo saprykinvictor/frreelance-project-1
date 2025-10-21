@@ -56,6 +56,7 @@ nav {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -75,6 +76,7 @@ li {
 
 img {
   max-width: 100%;
+  vertical-align: bottom;
 }
 
 button {
@@ -118,6 +120,7 @@ body {
   display: inline-block;
   font-weight: 700;
   font-size: 55px;
+  line-height: 1.2;
   color: var(--white);
 }
 
@@ -316,14 +319,16 @@ body {
 
 /* =================philosophy================= */
 
-.philosophy__inner {
+.philosophy__inner,
+.instagram__inner {
   margin: 0 auto;
   max-width: 1440px;
-display: flex;
+  display: flex;
 }
 
-.philosophy__descr {
-  padding: 140px 74px 127px 72px;
+.philosophy__descr,
+.instagram__descr {
+  padding: 121px 74px 118px 72px;
   flex-basis: 50%;
   min-height: 100%;
   display: flex;
@@ -332,16 +337,19 @@ display: flex;
   background-color: var(--peach-accent);
 }
 
-.philosophy__title {
-  margin-bottom: 44px;
+.philosophy__title,
+.instagram__title {
+  margin-bottom: 24px;
   color: var(--level-1);
 }
 
-.philosophy__text {
+.philosophy__text,
+.instagram__text {
   color: var(--dark-grey);
 }
 
-.philosophy__link {
+.philosophy__link,
+.instagram__link {
   display: inline-block;
   margin-top: auto;
   padding-bottom: 5px;
@@ -354,9 +362,9 @@ display: flex;
   border-bottom: 1px solid var(--light-grey);
 }
 
-.philosophy__image img {
+.philosophy__image,
+.instagram__img img {
   flex-basis: 50%;
-  vertical-align:bottom;
 }
 
 /* =================philosophy/================= */
@@ -377,7 +385,7 @@ display: flex;
 }
 
 .skills {
-  padding-top: 112px;
+  padding-top: 120px;
   padding-bottom: 114px;
   background-color: var(--black);
   color: var(--light-grey);
@@ -391,12 +399,11 @@ display: flex;
 }
 
 .skills__inner-descr {
-  padding-top: 20px;
   grid-column: 1 / 2;
 }
 
 .skills__title {
-  margin-bottom: 44px;
+  margin-bottom: 24px;
 }
 
 .skills__descr {
@@ -470,10 +477,8 @@ display: flex;
 .clients__list {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-}
-
-.clients__item {
+  /* flex-wrap: wrap; */
+  overflow: hidden;
 }
 
 .clients__item:not(:last-child) {
@@ -528,3 +533,358 @@ display: flex;
 }
 
 /* ===============Clients/=================== */
+
+/* ===============Works=================== */
+
+.work {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.work__inner {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 24px;
+}
+
+.work__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: var(--light-grey);
+}
+
+.work__subtitle {
+  max-width: 572px;
+}
+
+.work__item--heading {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  max-height: 244px;
+}
+.work__item:nth-child(2) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
+}
+.work__item:nth-child(3) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+.work__item:nth-child(4) {
+  grid-column: 1 / 2;
+  grid-row: 5 / 8;
+}
+
+.work__item:nth-child(5) {
+  grid-column: 2 / 3;
+  grid-row: 4 / 7;
+}
+
+.work__item:nth-child(6) {
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+}
+
+.work__item-descr {
+  padding: 40px 32px;
+  background-color: var(--level-1);
+}
+
+.work__item-title {
+  margin-bottom: 13px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.work__item-descr p {
+  color: var(--light-grey);
+}
+
+.work__item-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work__btn {
+  padding: 24px 32px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: var(--white);
+  border: 1px solid var(--purple);
+}
+
+/* ===============Works/=================== */
+
+/* ===============Dribble=================== */
+
+.dribble {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.dribble__inner {
+  padding-inline: 110px;
+}
+
+.dribble__title,
+.about__title,
+.photography__title,
+.started__title {
+  margin-bottom: 24px;
+}
+
+.dribble__text,
+.about__text,
+.photography__text,
+.started__text {
+  margin-bottom: 40px;
+  max-width: 636px;
+  color: var(--light-grey);
+}
+
+.dribble__link,
+.about__link {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--white);
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.dribble__descr {
+  margin-bottom: 120px;
+}
+
+.dribble__image img {
+  border-radius: 8px;
+}
+/* ===============Dribble/=================== */
+
+/* ===============About=================== */
+
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about__inner {
+  display: flex;
+  gap: 24px;
+}
+
+.about__heading {
+  padding-right: 80px;
+}
+
+.about__content,
+.about__heading {
+  flex-basis: 50%;
+}
+
+.about__item:not(:last-child) {
+  margin-bottom: 120px;
+}
+
+.about__descr {
+  padding: 64px;
+  border: 1px solid var(--light-grey);
+  border-top: none;
+}
+
+.about__quote {
+  margin: 0;
+}
+
+.about__quote p {
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.about__quote cite {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 150%;
+  color: var(--dark-grey);
+}
+/* ===============About/=================== */
+
+/* ===============Photography=================== */
+
+.photography {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.photography__pagination-list {
+  margin-bottom: 49px;
+  display: flex;
+  gap: 24px;
+}
+
+.photography__pagination-item {
+  padding: 12px 16px;
+  border: 1px solid var(--purple);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.photography__pagination-item:hover {
+  background-color: var(--purple);
+}
+
+.photography__pagination-item:active {
+  background-color: var(--purple);
+}
+
+.photography__pagination-link {
+  padding: 12px 16px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.photography__gallery-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* ===============Photography/=================== */
+
+/* ===============Started=================== */
+
+.started {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.started__inner {
+  padding-inline: 110px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.started__heading {
+  max-width: 494px;
+}
+
+.started__form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 526px;
+  width: 100%;
+}
+
+.started__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.started__label {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.started__input {
+  margin-top: 8px;
+  padding: 16px;
+  border: none;
+  background-color: var(--level-1);
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.started__btn {
+  padding-block: 24px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+/* ===============Started/=================== */
+
+/* ===============Footer=================== */
+
+.footer {
+  padding-block: 80px;
+  background-color: var(--level-1);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.footer__content {
+  margin-bottom: 58px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.footer__soc1al-list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer__nav-list,
+.footer__more-list {
+  padding-top: 12px;
+  padding-right: 163px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__more-list {
+  padding-right: 209px;
+}
+
+.footer__nav {
+  margin-left: auto;
+}
+
+.footer__bottom {
+  color: var(--light-grey);
+}
+/* ===============Footer/=================== */
