@@ -8,7 +8,117 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <main>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <a href="#!" class="header__logo">
+            <svg class="logo-icon">
+              <use xlink:href="img/sprite.svg#robin"></use>
+            </svg>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav-link">
+                  Experience
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav-link">
+                  Work
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav-link">
+                  Photography
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav-link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header__inner">
+      <div class="header__image">
+        <picture>
+          <source srcset="img/header-img.webp" type="image/webp">
+          <img loading="lazy" src="img/header-img.jpg" class="product__pic" width="750" height="650" alt="Robin.W">
+        </picture>
+      </div>
+      <div class="header__heading">
+        <h1 class="header__title">
+          I’m Robin Williams. A Product Designer <span>based in Italy.</span>
+        </h1>
+        <p>
+          I’m probably the most passionate designer you will ever get to work with. If you have a great project that
+          needs some
+          amazing skills, I’m your guy.
+        </p>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="experience">
+      <div class="container">
+        <h2 class="experience__title">work experience</h2>
+        <p class="experience__subtitle section-title">
+          Companies I have worked
+          for in the past
+        </p>
+        <ol class="experience__list">
+          <li class="experience__item">
+            <p class="experience__item-title">
+              <span>Google</span>, Interaction Designer
+            </p>
+            <p class="experience__item-text">
+              I currently am the lead designer on the interaction design team for Google Play.
+            </p>
+          </li>
+          <li class="experience__item">
+            <p class="experience__item-title">
+              <span>Facebook</span>, Product Designer
+            </p>
+            <p class="experience__item-text">
+              I’ve worked on a wide variety of internal tools for facebook over the past 6 years.
+            </p>
+          </li>
+          <li class="experience__item">
+            <p class="experience__item-title">
+              <span>Dribbble</span>, Graphic Designer
+            </p>
+            <p class="experience__item-text">
+              I started my design career with Dribbble. I was incharge of creating illustrations for the platform.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="philosophy">
+      <div class="philosophy__inner">
+        <div class="philosophy__descr">
+          <h2 class="philosophy__title section-title">
+            Philosophy & values
+          </h2>
+          <p class="philosophy__text">
+            I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the
+            universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.
+          </p>
+          <a href="#!" class="philosophy__link">More about me</a>
+        </div>
+        <div class="philosophy__image">
+            <picture>
+              <source srcset="img/philosophy.webp" type="image/webp">
+              <img loading="lazy" src="img/philosophy.jpg" class="product__pic" width="720" height="600" alt="Robin.W">
+            </picture>
+        </div>
+      </div>
+    </section>
     <section class="skills">
       <div class="container">
         <div class="skills__inner">
