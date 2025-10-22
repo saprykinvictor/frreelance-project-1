@@ -561,6 +561,18 @@ body {
   max-width: 572px;
 }
 
+.work__item-image {
+  overflow: hidden;
+}
+
+.work__item-link .work-pic {
+  transition: transform .3s ease-in-out;
+}
+
+.work__item-link:hover .work-pic {
+  transform: scale(1.02);
+}
+
 .work__item--heading {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -622,6 +634,11 @@ body {
   text-transform: uppercase;
   color: var(--white);
   border: 1px solid var(--purple);
+  transition: background-color .3s ease-in-out;
+}
+
+.work__btn:hover {
+  background-color: var(--purple);
 }
 
 /* ===============Works/=================== */
@@ -769,6 +786,28 @@ body {
   gap: 24px;
 }
 
+.photography__gallery-item {
+  cursor: pointer;
+}
+
+.photography__image,
+.photography__gallery-item {
+  overflow: hidden;
+}
+
+.photography__gallery-item img {
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.photography__gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.photo-pic {
+
+}
+
 /* ===============Photography/=================== */
 
 /* ===============Started=================== */
@@ -887,5 +926,15 @@ textarea {
 
 .footer__bottom {
   color: var(--light-grey);
+}
+
+.footer__nav-link,
+.footer__more-link {
+  transition: color .3s ease-in-out;
+}
+
+.footer__nav-link:hover,
+.footer__more-link:hover {
+  color: var(--purple);
 }
 /* ===============Footer/=================== */
