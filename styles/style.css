@@ -740,7 +740,7 @@ body {
   font-size: 18px;
   font-style: normal;
   line-height: 150%;
-  color: #7F8D9A;
+  color: #7f8d9a;
 }
 /* ===============About/=================== */
 
@@ -857,6 +857,7 @@ body {
 
 textarea {
   min-height: 100px;
+  resize: none;
 }
 
 .started__btn {
