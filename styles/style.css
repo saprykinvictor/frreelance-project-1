@@ -566,7 +566,7 @@ body {
 }
 
 .work__item-link .work-pic {
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .work__item-link:hover .work-pic {
@@ -634,7 +634,7 @@ body {
   text-transform: uppercase;
   color: var(--white);
   border: 1px solid var(--purple);
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .work__btn:hover {
@@ -797,15 +797,10 @@ body {
 
 .photography__gallery-item img {
   transition: transform 0.3s ease-in-out;
-
 }
 
 .photography__gallery-item:hover img {
   transform: scale(1.1);
-}
-
-.photo-pic {
-
 }
 
 /* ===============Photography/=================== */
@@ -930,7 +925,7 @@ textarea {
 
 .footer__nav-link,
 .footer__more-link {
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer__nav-link:hover,
